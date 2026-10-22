@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web｜我的第一個網站</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #243047;
+      line-height: 1.7;
+      background: #f7f9fc;
+    }
+    header {
+      background: #ffffff;
+      padding: 16px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 12px #17255412;
+    }
+    .logo { font-size: 1.5rem; font-weight: 800; color: #2563eb; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { text-decoration: none; color: #243047; }
+    nav a:hover { color: #2563eb; }
+    .hero {
+      padding: 88px 7%;
+      text-align: center;
+      background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.25; margin: 0 0 20px; }
+    .hero p { max-width: 650px; margin: 0 auto 28px; font-size: 1.1rem; }
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    section { padding: 60px 7%; }
+    h2 { text-align: center; font-size: 2rem; margin-top: 0; }
+    .intro { max-width: 760px; margin: auto; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 8px 28px #1725540c;
+    }
+    .card .emoji { font-size: 2rem; }
+    .contact { text-align: center; background: #eaf1ff; }
+    footer { text-align: center; padding: 24px; background: #172554; color: white; }
+    @media (max-width: 700px) {
+      header { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 60px 6%; }
+      section { padding: 44px 6%; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">My Web</div>
+    <nav aria-label="主要導覽">
+      <a href="#home">首頁</a>
+      <a href="#about">關於我們</a>
+      <a href="#services">服務項目</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <h1>歡迎來到我的網站</h1>
+      <p>用創意與 AI，打造簡單、美觀、適合每一種螢幕的網頁體驗。</p>
+      <a class="button" href="#about">開始探索</a>
+    </section>
+    <section id="about">
+      <div class="intro">
+        <h2>關於 My Web</h2>
+        <p>這是我的第一個網站！我正在學習運用 AI 與網頁技術，讓想法變成真正可以瀏覽的網站。</p>
+      </div>
+    </section>
+    <section id="services">
+      <h2>我的網站特色</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">📱</div>
+          <h3>RWD 響應式設計</h3>
+          <p>自動調整版面，讓手機、平板與電腦都能舒適瀏覽。</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>簡潔美觀</h3>
+          <p>清楚的導覽、舒服的色彩與容易閱讀的內容。</p>
+        </article>
+        <article class="card">
+          <div class="emoji">✨</div>
+          <h3>AI 創意實踐</h3>
+          <p>運用 AI 輔助學習，逐步把創意變成網頁作品。</p>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>聯絡我們</h2>
+      <p>感謝你來參觀我的第一個網站！</p>
+      <a class="button" href="#home">回到首頁</a>
+    </section>
+  </main>
+  <footer>© 2026 My Web｜我的第一個 RWD 網站</footer>
+</body>
+</html>
